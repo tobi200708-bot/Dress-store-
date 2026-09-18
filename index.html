@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VÉRA | Modern Fashion Store</title>
+
+    <meta
+        name="description"
+        content="VÉRA - Modern fashion for Men, Women and Kids."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <div class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+            <a href="#home">VÉRA</a>
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#shop">Shop</a>
+            </li>
+
+            <li>
+                <a href="#categories">Categories</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+            <button
+                id="searchButton"
+                type="button"
+                aria-label="Search"
+            >
+                🔍
+            </button>
+
+            <button
+                id="wishlistButton"
+                type="button"
+                aria-label="Wishlist"
+            >
+                ♡
+            </button>
+
+            <button
+                id="cartButton"
+                type="button"
+                aria-label="Shopping cart"
+            >
+                🛒 <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="product-search">
+
+        <input
+            id="searchInput"
+            class="search-input"
+            type="search"
+            placeholder="Search products..."
+            aria-label="Search products"
+        >
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<main>
+
+<section
+    id="home"
+    class="hero"
+>
+
+    <div class="hero-content">
+
+        <div class="hero-subtitle">
+            NEW COLLECTION 2026
+        </div>
+
+        <h1>
+            STYLE<br>
+            WITHOUT<br>
+            LIMITS.
+        </h1>
+
+        <p>
+            Discover modern fashion designed
+            for every moment.
+        </p>
+
+        <a
+            href="#shop"
+            class="shop-now"
+        >
+            SHOP NOW
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CATEGORIES
+========================================= -->
+
+<section
+    id="categories"
+    class="categories"
+>
+
+    <div class="section-container">
+
+        <div class="section-label">
+            EXPLORE
+        </div>
+
+        <h2 class="section-title">
+            SHOP BY CATEGORY
+        </h2>
+
+
+        <div class="category-grid">
+
+
+            <!-- MEN -->
+
+            <div class="category-card">
+
+                <img
+                    src="images/men.jpg"
+                    alt="Men's fashion"
+                    loading="lazy"
+                >
+
+                <div class="category-content">
+
+                    <h3>MEN</h3>
+
+                    <p>
+                        Modern essentials
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- WOMEN -->
+
+            <div class="category-card">
+
+                <img
+                    src="images/women.jpg"
+                    alt="Women's fashion"
+                    loading="lazy"
+                >
+
+                <div class="category-content">
+
+                    <h3>WOMEN</h3>
+
+                    <p>
+                        Elegant everyday style
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- KIDS -->
+
+            <div class="category-card">
+
+                <img
+                    src="images/kids.jpg"
+                    alt="Kids fashion"
+                    loading="lazy"
+                >
+
+                <div class="category-content">
+
+                    <h3>KIDS</h3>
+
+                    <p>
+                        Comfortable & playful
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SHOP / PRODUCTS
+========================================= -->
+
+<section
+    id="shop"
+    class="products-section"
+>
+
+    <div class="section-container">
+
+        <div class="section-label">
+            VÉRA COLLECTION
+        </div>
+
+        <h2 class="section-title">
+            FEATURED PRODUCTS
+        </h2>
+
+
+        <!-- SEARCH -->
+
+        <div class="product-search">
+
+            <input
+                id="shopSearch"
+                type="search"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/product1.jpg"
+                        alt="Classic Blue Shirt"
+                        loading="lazy"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        data-product="Classic Blue Shirt"
+                        type="button"
+                        aria-label="Add to wishlist"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <div class="product-badge">
+                        NEW
+                    </div>
+
+                    <div class="product-category">
+                        MEN
+                    </div>
+
+                    <h3 class="product-name">
+                        Classic Blue Shirt
+                    </h3>
+
+                    <div class="product-price">
+                        ₹999
+                    </div>
+
+                    <button
+                        class="add-to-cart"
+                        type="button"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/product2.jpg"
+                        alt="Premium White Shirt"
+                        loading="lazy"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        data-product="Premium White Shirt"
+                        type="button"
+                        aria-label="Add to wishlist"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <div class="product-badge">
+                        BEST
+                    </div>
+
+                    <div class="product-category">
+                        MEN
+                    </div>
+
+                    <h3 class="product-name">
+                        Premium White Shirt
+                    </h3>
+
+                    <div class="product-price">
+                        ₹1299
+                    </div>
+
+                    <button
+                        class="add-to-cart"
+                        type="button"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/product3.jpg"
+                        alt="Elegant Black Dress"
+                        loading="lazy"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        data-product="Elegant Black Dress"
+                        type="button"
+                        aria-label="Add to wishlist"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <div class="product-badge">
+                        HOT
+                    </div>
+
+                    <div class="product-category">
+                        WOMEN
+                    </div>
+
+                    <h3 class="product-name">
+                        Elegant Black Dress
+                    </h3>
+
+                    <div class="product-price">
+                        ₹1799
+                    </div>
+
+                    <button
+                        class="add-to-cart"
+                        type="button"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/product4.jpg"
+                        alt="Casual Beige Dress"
+                        loading="lazy"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        data-product="Casual Beige Dress"
+                        type="button"
+                        aria-label="Add to wishlist"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <div class="product-badge">
+                        NEW
+                    </div>
+
+                    <div class="product-category">
+                        WOMEN
+                    </div>
+
+                    <h3 class="product-name">
+                        Casual Beige Dress
+                    </h3>
+
+                    <div class="product-price">
+                        ₹1499
+                    </div>
+
+                    <button
+                        class="add-to-cart"
+                        type="button"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 5 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/product5.jpg"
+                        alt="Kids Casual Outfit"
+                        loading="lazy"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        data-product="Kids Casual Outfit"
+                        type="button"
+                        aria-label="Add to wishlist"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <div class="product-badge">
+                        SALE
+                    </div>
+
+                    <div class="product-category">
+                        KIDS
+                    </div>
+
+                    <h3 class="product-name">
+                        Kids Casual Outfit
+                    </h3>
+
+                    <div class="product-price">
+                        ₹799
+                    </div>
+
+                    <button
+                        class="add-to-cart"
+                        type="button"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 6 -->
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/product6.jpg"
+                        alt="Kids Summer Set"
+                        loading="lazy"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        data-product="Kids Summer Set"
+                        type="button"
+                        aria-label="Add to wishlist"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <div class="product-badge">
+                        NEW
+                    </div>
+
+                    <div class="product-category">
+                        KIDS
+                    </div>
+
+                    <h3 class="product-name">
+                        Kids Summer Set
+                    </h3>
+
+                    <div class="product-price">
+                        ₹899
+                    </div>
+
+                    <button
+                        class="add-to-cart"
+                        type="button"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     NEW SEASON BANNER
+========================================= -->
+
+<section class="special-banner">
+
+    <div class="special-content">
+
+        <div class="special-label">
+            NEW SEASON
+        </div>
+
+        <h2>
+            ELEVATE<br>
+            YOUR STYLE.
+        </h2>
+
+        <p>
+            Discover the latest VÉRA collection.
+        </p>
+
+        <a
+            href="#shop"
+            class="special-btn"
+        >
+            EXPLORE NOW
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section
+    id="about"
+    class="about-section"
+>
+
+    <div class="section-container">
+
+        <div class="about-content">
+
+            <div class="section-label">
+                ABOUT VÉRA
+            </div>
+
+            <h2>
+                FASHION<br>
+                WITH PURPOSE.
+            </h2>
+
+            <p>
+                VÉRA is a modern fashion brand
+                focused on timeless design,
+                quality materials and effortless
+                everyday style.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section
+    id="contact"
+    class="contact-section"
+>
+
+    <div class="section-container">
+
+        <div class="contact-container">
+
+            <div class="section-label">
+                GET IN TOUCH
+            </div>
+
+            <h2 class="section-title">
+                CONTACT VÉRA
+            </h2>
+
+
+            <form
+                class="contact-form"
+                id="contactForm"
+            >
+
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="contactMessage"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button
+                    type="submit"
+                >
+                    SEND MESSAGE
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h3>VÉRA</h3>
+
+            <p>
+                Modern fashion.
+                Timeless style.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>QUICK LINKS</h3>
+
+            <p>
+                <a href="#home">Home</a>
+            </p>
+
+            <p>
+                <a href="#shop">Shop</a>
+            </p>
+
+            <p>
+                <a href="#categories">
+                    Categories
+                </a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>CONTACT</h3>
+
+            <p>
+                Email: hello@vera-fashion.com
+            </p>
+
+            <p>
+                India
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year">2026</span>
+            VÉRA Fashion. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script src="script.js"></script>
+
+<script>
+
+    // Mobile menu
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+    if (menuToggle && navLinks) {
+
+        menuToggle.addEventListener(
+            "click",
+            function () {
+
+                navLinks.classList.toggle("active");
+
+            }
+        );
+
+    }
+
+
+    // Second search box
+    const shopSearch =
+        document.getElementById("shopSearch");
+
+    const mainSearch =
+        document.getElementById("searchInput");
+
+    if (shopSearch && mainSearch) {
+
+        shopSearch.addEventListener(
+            "input",
+            function () {
+
+                mainSearch.value =
+                    shopSearch.value;
+
+                mainSearch.dispatchEvent(
+                    new Event("input")
+                );
+
+            }
+        );
+
+    }
+
+
+    // Contact form
+    const contactForm =
+        document.getElementById("contactForm");
+
+    if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+                alert(
+                    "Thank you! Your message has been received."
+                );
+
+                contactForm.reset();
+
+            }
+        );
+
+    }
+
+
+    // Year
+    const year =
+        document.getElementById("year");
+
+    if (year) {
+        year.textContent =
+            new Date().getFullYear();
+    }
+
+</script>
+
+</body>
+</html>

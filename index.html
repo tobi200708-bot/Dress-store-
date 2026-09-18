@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VÉRA Fashion Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">VÉRA</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button id="searchBtn">🔍</button>
+        <button id="wishlistBtn">♡</button>
+        <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="small-title">WELCOME TO VÉRA</p>
+
+        <h1>Style That<br>Defines You</h1>
+
+        <p>
+            Discover elegant fashion designed
+            for every moment.
+        </p>
+
+        <a href="#shop" class="hero-btn">
+            Shop Now →
+        </a>
+    </div>
+</section>
+
+
+<!-- CATEGORIES -->
+<section id="categories" class="section">
+    <div class="section-title">
+        <p>EXPLORE</p>
+        <h2>Shop By Category</h2>
+    </div>
+
+    <div class="category-grid">
+
+        <a href="#shop" class="category-card">
+            <img src="men.jpg" alt="Men Fashion">
+            <div>
+                <h3>Men</h3>
+                <span>Explore Collection →</span>
+            </div>
+        </a>
+
+        <a href="#shop" class="category-card">
+            <img src="women.jpg" alt="Women Fashion">
+            <div>
+                <h3>Women</h3>
+                <span>Explore Collection →</span>
+            </div>
+        </a>
+
+        <a href="#shop" class="category-card">
+            <img src="kids.jpg" alt="Kids Fashion">
+            <div>
+                <h3>Kids</h3>
+                <span>Explore Collection →</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- SHOP -->
+<section id="shop" class="section shop-section">
+
+    <div class="section-title">
+        <p>OUR COLLECTION</p>
+        <h2>Featured Products</h2>
+    </div>
+
+    <div class="search-area">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+    </div>
+
+    <div class="product-grid">
+
+        <article class="product-card" data-name="Floral Dress">
+            <div class="product-image">
+                <img src="dress1.jpg" alt="Floral Dress">
+                <span class="badge">NEW</span>
+                <button class="wishlist" data-name="Floral Dress">♡</button>
+            </div>
+
+            <div class="product-info">
+                <p>Women</p>
+                <h3>Floral Dress</h3>
+                <strong>₹1,499</strong>
+                <button
+                    class="cart-btn"
+                    data-name="Floral Dress"
+                    data-price="1499">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+
+        <article class="product-card" data-name="Green Party Dress">
+            <div class="product-image">
+                <img src="dress2.jpg" alt="Green Party Dress">
+                <span class="badge">SALE</span>
+                <button class="wishlist" data-name="Green Party Dress">♡</button>
+            </div>
+
+            <div class="product-info">
+                <p>Women</p>
+                <h3>Green Party Dress</h3>
+                <strong>₹1,799</strong>
+                <button
+                    class="cart-btn"
+                    data-name="Green Party Dress"
+                    data-price="1799">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+
+        <article class="product-card" data-name="Classic Blue Shirt">
+            <div class="product-image">
+                <img src="dress3.jpg" alt="Classic Blue Shirt">
+                <span class="badge">BEST</span>
+                <button class="wishlist" data-name="Classic Blue Shirt">♡</button>
+            </div>
+
+            <div class="product-info">
+                <p>Men</p>
+                <h3>Classic Blue Shirt</h3>
+                <strong>₹999</strong>
+                <button
+                    class="cart-btn"
+                    data-name="Classic Blue Shirt"
+                    data-price="999">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+
+        <article class="product-card" data-name="Summer Floral Dress">
+            <div class="product-image">
+                <img src="dress4.jpg" alt="Summer Floral Dress">
+                <span class="badge">HOT</span>
+                <button class="wishlist" data-name="Summer Floral Dress">♡</button>
+            </div>
+
+            <div class="product-info">
+                <p>Women</p>
+                <h3>Summer Floral Dress</h3>
+                <strong>₹1,599</strong>
+                <button
+                    class="cart-btn"
+                    data-name="Summer Floral Dress"
+                    data-price="1599">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- PROMO -->
+<section class="promo">
+    <div>
+        <p>VÉRA SPECIAL</p>
+        <h2>New Season<br>New Style</h2>
+        <p>Discover your perfect fashion look today.</p>
+
+        <a href="#shop">Explore Now →</a>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about section">
+
+    <div class="section-title">
+        <p>ABOUT VÉRA</p>
+        <h2>Fashion For Everyone</h2>
+    </div>
+
+    <p>
+        VÉRA is a modern fashion store created to bring
+        stylish, comfortable and affordable clothing
+        to everyone. Explore our latest collections
+        and find your unique style.
+    </p>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact section">
+
+    <div class="section-title">
+        <p>GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+    </div>
+
+    <p>Email: support@verafashion.com</p>
+    <p>Phone: +91 98765 43210</p>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <h2>VÉRA</h2>
+    <p>Fashion • Style • Confidence</p>
+    <p>© 2026 VÉRA Fashion Store. All Rights Reserved.</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
